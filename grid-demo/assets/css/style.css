@@ -1,0 +1,89 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  /*Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack/ */
+  /* Start of "Micro clearfix" */
+  
+  .cf {
+    zoom: 1;
+  }
+  .cf:before,
+  .cf:after {
+    content: "";
+    display: table;
+  }
+  .cf:after {
+    clear: both;
+  }
+  
+  /* End of "Micro clearfix" */
+  
+  /*
+  background-image:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/7248/grid-1.png");*/
+  
+  .container{
+   /* width:80vw;*//* remove to add the @media */
+    margin: 20px auto;
+    border: 1px solid rgb(36, 55, 141);
+    /*background-image:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/7248/grid-1.png");*/
+  }
+  
+  header.primary{
+    background: rgba(84, 92, 216, 0.4);
+    /*920 px*/
+    width:95.833%;
+    margin:2.083%;
+    float:left;
+    padding:2.173%;
+  }
+  
+  #content {
+    background: rgba(64, 59, 126, 0.6);
+    float:left;
+    /*638px*/
+    width:66.458%;
+    margin-left:2.083%;
+    padding:2.173%;
+  }
+  
+  aside{
+    /*262px*/
+    width:27.291%;
+    float:left;
+    background: rgba(75, 160, 199, 0.3);
+    margin-left:2.083%;
+    padding:2.173%;
+  }
+  
+  footer.primary{
+    background: rgba(134, 100, 214, 0.4);
+    /*920 px*/
+    width:95.833%;
+    margin:2.083%;
+    float:left;
+    padding:2.173%;
+  }
+  @media screen and (min-width:600px){
+    .container{
+      width:95vw;
+    }
+  }
+  
+  @media screen and (min-width:800px){
+    .container{
+      width:85vw;
+    }
+  }
+  
+  @media screen and (min-width:1000px){
+    .container{
+      width:65vw;
+    }
+  }
