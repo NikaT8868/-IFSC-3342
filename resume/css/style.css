@@ -11,9 +11,12 @@ body{font-family: 'Open Sans', sans-serif;}
 /* ------ Fluid Images -------*/
 
 img {
-  max-width:100%;
+  max-width:50%;
   height:auto;
-}
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
 
 /* ------ Design Time Styles -------*/
 
@@ -94,7 +97,7 @@ main h1:after {
 dl{
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-templates-rows: auto;
+  grid-template-rows: auto;
   /* Shorthand */
   grid-template: auto / 1fr 2fr;
 }
@@ -145,9 +148,9 @@ dd{
   margin-right:10px;
 }
 
-#skills{
+/*#skills{
   
-}
+}*/
 #skills li {
   list-style-type:square;
 }
@@ -196,7 +199,7 @@ padding:20px 0;
 }
 
 
-.img-center{
+/*.img-center{
 	float:center;
 	border:1px solid #c0c0c0;
 	padding:5px;
@@ -205,8 +208,8 @@ padding:20px 0;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-}
+  width:50%;
+}*/
 
 
 
