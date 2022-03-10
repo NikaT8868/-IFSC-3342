@@ -344,6 +344,12 @@ main.container > * {
     padding-bottom: 50px;
    flex: 1;
   }
+
+  footer { 
+    max-width: 900px;
+    margin-bottom: 35px;
+  }
+
 }
 
 /*----------------------Edge Case Tweaks-----------------------*/
