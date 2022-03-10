@@ -85,6 +85,7 @@ nav a:hover {
 
 main {
   padding: 1px 20px;
+  
 }
 
 main h1 {
@@ -95,6 +96,15 @@ main h1 {
   font-weight: 400;
   font-variant: small-caps;
 }
+
+main h2 {
+  font-weight: 200;
+  border-bottom: 1px solid #999;
+}
+
+
+
+
 main h1:before,
 main h1:after {
   background-color: #222;
@@ -200,7 +210,7 @@ dd {
 }
 
 .job, .certificate{
-  border-bottom:1px solid #999;
+  /*border-bottom:1px solid #999;*/
   padding-bottom:20px;
 }
 
@@ -222,7 +232,14 @@ dd {
 
 footer{
 text-align:center;
-padding:20px 0;
+/*padding:20px 0;*/
+border: 1px solid #000; 
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgb(29, 27, 27);
+  font-size: .8em;
+  padding: 5px;
+  color: rgb(160, 160, 160);
 }
 
 
@@ -291,7 +308,7 @@ main.container > * {
   header.container {
     max-width: 900px;
   }
-  
+
   /*.page-title {
   }*/
 
@@ -308,6 +325,11 @@ main.container > * {
     display: flex;
     flex-flow:row wrap;
   }
+
+  h2 {
+    width: 75%;
+  }
+
 
 .bio {
  flex:1 30%;
