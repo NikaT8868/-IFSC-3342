@@ -1,0 +1,53 @@
+body {
+  --typeface:"Niramit", sans-serif;
+}
+
+$typeface: "Niramit", sans-serif;
+$background-color: #c0c0c0;
+$primary-color: #999;
+$radius: 20px;
+$margin: 20px;
+$margin-small: 10px;
+
+/* Mixin Example*/
+
+@mixin background-opacity($color, $opacity) {
+  background: $color; /* The Fallback */
+  background: rgba($color, $opacity);
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $typeface;
+}
+
+section {
+  font-family:var(--typeface);
+  
+  max-width: 80vw;
+  display: flex;
+  margin: $margin-small auto;
+  background: $background-color;
+  border-radius: $radius;
+
+  article {
+    margin: $margin;
+    border-radius: $radius;
+    border: 1px solid #c0c0c0;
+    padding: 1em;
+    flex-grow: 1;
+    @include background-opacity(#000, 0.15);
+
+    &.post {
+      border: 1px solid darken($primary-color, 40%);
+    }
+  }
+}
