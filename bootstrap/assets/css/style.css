@@ -1,0 +1,25 @@
+header, #content, aside, footer, article{
+    height:25vh;  
+}
+
+header, footer{
+
+    background-color:lightgrey ;
+}
+
+#content{
+
+    background-color: lightblue;
+}
+
+article{
+
+    background-color: aquamarine;
+    
+    border: 1px solid black !important;
+}
+
+aside{
+
+    background-color: rgb(108, 108, 170);
+}
