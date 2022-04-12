@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Nika Tavasoly</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link id="pagestyle" href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Fjalla+One&family=Hind&family=Permanent+Marker&family=Roboto+Serif:wdth,wght@85.1,530;100,300&display=swap" rel="stylesheet">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BEFB8CWLXD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BEFB8CWLXD');
+  </script>
+  <script src="https://kit.fontawesome.com/1a5f26923c.js" crossorigin="anonymous"></script>
+</head>
+
+<nav class="shadow navbar navbar-expand-sm navbar-dark bg-dark bg-gradient sticky-top mb-2 border-bottom-black">
+  <div class="container-fluid">
+    <a class="navbar-brand ms-sm-5" href="#"><img class="PM-pic ms-2" src="img/AR.png" alt="AR State Parks"></img></a>
+    <button class="navbar-toggler collapsed d-flex d-sm-none flex-column justify-content-around" type="button"
+      data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="toggler-icon top-bar"></span>
+      <span class="toggler-icon middle-bar"></span>
+      <span class="toggler-icon bottom-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <ul class="navbar-nav text-center">
+        <li class="nav-item">
+          <a class="nav-link text-light fw-bold" onclick="openTab(event, 'PM_section'); toTop()">PM State Park</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light defaultOpen" onclick="openTab(event, 'Trails_section'); toTop()">Trails</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" onclick="openTab(event, 'Things to Do_section'); toTop()">Things to Do</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<body>
+  <main class="container pb-5">
+
+    <!-- Start Trails Section -->
+    <div id="Trails_section" class="tabcontent">
+
+    <h2 class="text-light marker-font text-center pb-1">*Trails*</h2>  
+
+      <div class="row">
+      <div class="m-auto col-sm-auto col-md-6 col-lg-4 pb-2">
+        <div class="card">
+          <img src="img/West Summit Trail.png" class="img-fluid rounded">
+        
+  
+        </div>
+        <h5 class="text-light ps-2 marker-font"><a href="https://www.alltrails.com/trail/us/arkansas/pinnacle-mountain-west-summit-trail">West Summit Trail</a></h5>
+      </div>
+
+      <div class="m-auto col-sm-auto col-md-6 col-lg-4 pb-2">
+        <div class="card">
+          <img src="img/Trail-East Quarry Spur.png" class="img-fluid rounded">
+       
+        </div>
+        <h5 class="text-light ps-2 pt-1 marker-font"><a href="https://www.alltrails.com/trail/us/arkansas/rocky-valley-trail-east-quarry-spur">East Quarry Spur</a></h5>
+      </div>
+
+      <div class="m-auto col-sm-auto col-md-6 col-lg-4 pb-2">
+        <div class="card">
+          <img src="img/Base Trail Loop.png" class="img-fluid rounded">
+     
+        </div>
+        <h5 class="text-light ps-2 pt-1 marker-font"><a href="https://www.alltrails.com/trail/us/arkansas/pinnacle-mountain-base-trail-loop--2?ref=result-card">Pinnacle Mountain Base Trail Loop</a></h5>
+      </div>
+
+      <div class="m-auto col-sm-auto col-md-6 col-lg-4 pb-2" data-bs-toggle="collapse" data-bs-target="#collapse4">
+        <div class="card">
+          <img src="img/Quachita National Recreation Trail.png" class="img-fluid rounded">
+        </div>
+        <h5 class="text-light ps-2 pt-1 marker-font"><a href="https://www.alltrails.com/trail/us/arkansas/ouachita-national-recreation-trail?ref=result-card">Quachita National Recreation Trail</a><i class="fa-solid fa-angle-down text-light marker-font float-end pe-2" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false"></i></h5>
+      <div class="collapse" id="collapse4">
+        <div class="card-body border-top border-secondary text-light" data-bs-toggle="collapse" data-bs-target="#collapse4">
+           
+            <br>Length 213.9 mi</br>
+            Elevation gain 32,276 ft
+            <br>Route type Point to point</br>
+                    
+        </div>
+      </div>
+    </div>
+
+      <div class="m-auto col-sm-auto col-md-6 col-lg-4 pb-2">
+        <div class="card">
+          <img src="img/Arkansas Arboretum Trail.png" class="img-fluid rounded">
+     
+        </div>
+        <h5 class="text-light ps-2 pt-1 marker-font"><a href="https://www.alltrails.com/trail/us/arkansas/arkansas-arboretum-trail?ref=result-card">Arkansas Arboretum Trail</a></h5>
+      </div>
+
+      <div class="m-auto col-sm-auto col-md-6 col-lg-4 pb-2" data-bs-toggle="collapse" data-bs-target="#collapse6">
+        <div class="card">
+          <img src="img/Quachita Trail and East Summit Loop.png" class="img-fluid rounded">
+        </div>
+        <h5 class="text-light ps-2 pt-1 marker-font"><a href="https://www.alltrails.com/trail/us/arkansas/ouachita-trail-and-east-summit-loop?ref=result-card">Quachita Trail and East Summit Loop</a><i class="fa-solid fa-angle-down text-light marker-font float-end pe-2" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false"></i></h5>
+      <div class="collapse" id="collapse6">
+        <div class="card-body border-top border-secondary text-light" data-bs-toggle="collapse" data-bs-target="#collapse6">
+            <br>Length 2.8 mi</br>
+            Elevation gain 872 ft
+            <br>Route type Loop</br>
+        </div>
+        </div>
+        </div>     
+
+      
+    </div>
+  </div>
+    <!-- End Trails Section -->
+
+    <!-- Start Things to Do Section -->
+    <div id="Things to Do_section" class="tabcontent">
+
+    <h2 class="text-light marker-font text-center pb-1">*Things to Do*</h2>
+
+    <div class="row">  
+      <div class="m-auto col-sm-12 col-md-6 col-lg-4 pb-2">
+        <div class="card">
+          <img src="img/Hiking.png" class="img-fluid rounded">
+       
+        </div>
+        <h5 class="text-light ps-2 pt-1 marker-font">Hiking</h5>
+      </div>
+
+      <div class="m-auto col-sm-12 col-md-6 col-lg-4 pb-2">
+        <div class="card">
+          <img src="img/boating.png" class="img-fluid rounded">
+     
+        </div>
+        <h5 class="text-light ps-2 pt-1 marker-font">Boating</h5>
+      </div>
+
+      <div class="m-auto col-sm-12 col-md-6 col-lg-4 pb-2">
+        <div class="card">
+          <img src="img/Playground.png" class="img-fluid rounded">
+    
+        </div>
+        <h5 class="text-light ps-2 pt-1 marker-font">Playground</h5>
+      </div>
+
+      <div class="m-auto col-sm-12 col-md-6 col-lg-4 pb-2">
+        <div class="card">
+          <img src="img/biking.png" class="img-fluid rounded">
+
+        </div>
+        <h5 class="text-light ps-2 pt-1 marker-font">Bikin</h5>
+      </div>
+
+    </div>
+  </div>
+    <!-- End Things to Do Section -->
+
+
+    <!-- Homepage - Pinnacle Moutain -->
+
+    <div id="PM_section" class="tabcontent">
+
+      <div class="row">
+        <div class="col">
+          <div class="card text-dark mb-4">
+            <div class="m-4 m-md-5 row-12">
+              <h2 class="marker-font text-center pb-2">Pinnacle Mountain State Park</h2>
+              <p>&nbsp;&nbsp;&nbsp; 
+                Pinnacle Mountain State Park is located in central Arkansas near the northeast corner of the Ouachita Mountains.
+                The park’s namesake is the first prominent cone-shaped mountain encountered by early westward 
+                travelers as they emerged from the alluvial plains of east Arkansas.          
+                Its cone-like appearance has long beckoned travelers and residents alike to ascend its peak for breathtaking
+                views of the surrounding hills and valleys. 
+              </p>
+              <p>&nbsp;&nbsp;&nbsp; 
+               It is a day-use park dedicated to environmental education, recreation, and preservation.
+                Located just west of Little Rock, this natural environment was set aside in 1977 as Arkansas's first state park adjoining
+                a major metropolitan area. Operating as a day-use only park, Pinnacle Mountain is dedicated to preservation, recreation, and environmental
+                education. Park interpreters and volunteers help visitors and students understand man's relationship to the environment in the 2,000-acre 
+                park that offers a rich diversity of natural habitat. 
+              </p>
+              <p>&nbsp;&nbsp;&nbsp; 
+                The park's dominant natural feature, Pinnacle Mountain, rises more than a thousand feet above the Arkansas River Valley. The mountain's cone-shaped peak has long been a central Arkansas landmark.
+                 Two of the park's hiking trails lead hikers to the mountain's summit.
+              </p>
+              <p>&nbsp;&nbsp;&nbsp; 
+                Park facilities include picnic sites, two standard pavilions with restrooms, launch ramps, and hiking trails. The park visitor center overlooking the Arkansas River includes exhibits,
+                 A/V programs, a meeting room, and gift shop.
+              </p>
+              <p>&nbsp;&nbsp;&nbsp; 
+                Within the park's environs is the Arkansas Arboretum, a 71-acre site exhibiting native flora representing Arkansas's six, major natural divisions. Below Pinnacle Mountain along the Little Maumelle
+                 River, the arboretum includes a .6-mile barrier-free, interpretive trail.
+              </p>
+              Camping is not available at Pinnacle Mountain State Park. 
+              <p>
+            
+                Park gates at Pinnacle Mountain State Park are closed one hour after sunset. 
+              </p>
+
+            </div>
+            <img src="img/Pinnacle.png" class="img-fluid rounded-bottom ms-0 mb-0 mt-0" alt="Pinnacle Mountain State Park">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </main>
+  <footer class="bg-dark pb-2 pt-1 text-secondary text-center fixed-bottom">&copy 2022 Nika Tavasoly | <a
+    href="#top">Back to Top</a></footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
